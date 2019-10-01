@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;
+margin-left:200px;
+}
+form {border: 2px solid #f1f1f1;
+width:50%;
+margin-left:200px;
+height:70%;
+
+}
+h2{
+margin-left:400px;
+}
+
+input[type=text], input[type=password],input[type=email],input[type=number],input[type=time]{
+  width: 50%;
+  padding: 15px 20px;
+  margin: 10px 10px ;
+  display:block;
+  border: 1px solid #ccc;
+   content:" *"; 
+  
+	
+  
+}
+
+button {
+  background-color:#008CBA;
+  color: white;
+  padding: 14px 20px;
+  margin-left: 100px;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  border-radius: 12px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+.required
+{
+    color: red;
+}
+
+
+.container {
+  padding: 30px;
+  width:120%;
+  margin-left:70px;
+ 
+
+  
+}
+
+
+}
+</style>
+</head>
+<body>
+
+<h2>Registration Form</h2>
+
+<form action="/action_page.php" method="post">
+  
+
+  <div class="container">
+    <label for="fname"><i class="fa fa-user"></i> <b>Full Name</b></label> <span class="required">*</span>
+            <input type="text" id="fname" name="firstname" placeholder="Enter the FullName"><br>
+
+    
+    <label for="mail"><i class="fa fa-envelope"></i><b> Email Id</b></label><span class="required">*</span>
+    <input type="email" placeholder="Enter your Email" name="mail" required><br>
+    <label for="pass"><i class="fa fa-lock"></i><b> Password</b></label><span class="required">*</span>
+    <input type="password" placeholder="Enter your password" name="pass" required><br>
+    <label for="cpass"><i class="fa fa-lock"></i><b> Confirm Password</b></label><span class="required">*</span>
+    <input type="password" placeholder="Confirm your password" name="cpass" required><br>  
+    <label for="mobile"><i class="fa fa-phone"></i><b> Mobile No</b></label><span class="required">*</span>
+    <input type="text" placeholder="Enter your Mobile No" name="Mobile" required><br>
+	<label for="cat"><i class="fa fa-list-alt"></i><b> Category</b></label><span class="required">*</span>
+    <input type="text" placeholder="Enter your Category" name="Category" required><br>
+	<label for="fees"><i class="fa fa-money"></i><b> Fees</b></label><span class="required">*</span>
+    <input type="text" placeholder="Enter your Fees" name="Fees" required><br>
+	<label for="time"><i class="fa  fa-clock-o"></i><b> Timings</b></label><span class="required">*</span>
+    <input type="time" name="usr_time"><br>
+	
+	<label for="exp"><i class="fa fa-cogs"></i><b> Experience</b></label><span class="required">*</span>
+   <input max="30" min="1" name="exp" step="1" type="number" value="2" /><br>
+   <label for="adr"><i class="fa fa-address-card-o"></i><b> Address</b></label><span class="required">*</span>
+    <input type="text" id="adr" name="address" placeholder="Chennai" required><br>
+   <label for="city"><i class="fa fa-institution"></i><b> City</b></label><span class="required">*</span>
+     <input type="text" id="city" name="city" placeholder="Enter the City" required><br>
+	 <label for="zip"><i class="fa fa-file-zip-o"></i><b> ZipCode</b></label><span class="required">*</span>
+     <input type="text" id="zip" name="zip" placeholder="Enter the zip" required><br>
+    
+    
+        
+    <button type="submit">submit</button>
+    
+  </div>
+
+  
+</form>
+
+
+</body>
+</html>
